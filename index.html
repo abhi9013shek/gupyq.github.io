@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gurugram University - Previous Year Question Papers</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #161b22;
+      color: #ffffff;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #30363d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    header img {
+      height: 60px;
+    }
+    nav {
+      background-color: #161b22;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #30363d;
+    }
+    nav a {
+      text-decoration: none;
+      color: #58a6ff;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .branch {
+      margin-bottom: 2rem;
+    }
+    .branch h2 {
+      color: #58a6ff;
+    }
+    .semester h3 {
+      color: #8b949e;
+    }
+    .search-box {
+      margin: 1rem 0;
+      text-align: center;
+    }
+    input[type="text"] {
+      padding: 0.5rem;
+      width: 80%;
+      max-width: 400px;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+      border-radius: 4px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #161b22;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-left: 5px solid #58a6ff;
+      border-radius: 4px;
+    }
+    a {
+      color: #58a6ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://play-lh.googleusercontent.com/q7aJvCvjWKzGNjdnU4yAMS7pgCr1gRyD7IKERjxJBQCVuTd2vL5Z9fxez3rkg_T6ffk=w600-h300-pc0xffffff-pd" alt="Gurugram University Logo">
+    <div>
+      <h1>Gurugram University</h1>
+      <p>Previous Year Question Papers Archive</p>
+    </div>
+  </header>  <nav>
+    <a href="#cse">CSE</a>
+    <a href="#ailm">AILM</a>
+  </nav>  <div class="search-box">
+    <input type="text" id="searchInput" onkeyup="searchPapers()" placeholder="Search for subjects or years..">
+  </div>  <div class="container">
+    <div class="branch" id="cse">
+      <h2>Computer Science Engineering (CSE)</h2><div class="semester">
+    <h3>Semester 1</h3>
+    <ul>
+      <li>English - 2021 <a href="#">[PDF]</a></li>
+      <li>Maths I - 2021 <a href="#">[PDF]</a></li>
+      <li>Basics of Environmental Science - 2022 <a href="#">[PDF]</a></li>
+      <li>Physics - 2021 <a href="#">[PDF]</a></li>
+      <li>Programming Using C - 2021 <a href="#">[PDF]</a></li>
+    </ul>
+  </div>
+
+  <div class="semester">
+    <h3>Semester 2</h3>
+    <ul>
+      <li>Human Values and Soft Skills - 2022 <a href="#">[PDF]</a></li>
+      <li>Maths II - 2022 <a href="#">[PDF]</a></li>
+      <li>Basics of Electrical Engineering - 2021 <a href="#">[PDF]</a></li>
+      <li>Object Oriented Python Programming - 2022 <a href="#">[PDF]</a></li>
+      <li>Data Structures and Algorithms - 2023 <a href="#">[PDF]</a></li>
+    </ul>
+  </div>
+
+  <div class="semester">
+    <h3>Semester 3</h3>
+    <ul>
+      <li>Digital Electronics - 2023 <a href="#">[PDF]</a></li>
+      <li>Database Management Using SQL - 2023 <a href="#">[PDF]</a></li>
+      <li>Programming Using C++ - 2022 <a href="#">[PDF]</a></li>
+      <li>Maths II - 2022 <a href="#">[PDF]</a></li>
+      <li>Advanced Data Structures and Algorithms - 2023 <a href="#">[PDF]</a></li>
+      <li>Introduction to AI and ML - 2023 <a href="#">[PDF]</a></li>
+    </ul>
+  </div>
+
+  <div class="semester">
+    <h3>Semester 4</h3>
+    <ul>
+      <li>MMC - 2023 <a href="#">[PDF]</a></li>
+      <li>Operating System - 2022 <a href="#">[PDF]</a></li>
+      <li>Computer Organisation and Architecture - 2021 <a href="#">[PDF]</a></li>
+      <li>Discrete Mathematics - 2021 <a href="#">[PDF]</a></li>
+      <li>Programming Using Java - 2022 <a href="#">[PDF]</a></li>
+      <li>Programming Using R - 2023 <a href="#">[PDF]</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="branch" id="ailm">
+  <h2>Artificial Intelligence and Learning Machines (AILM)</h2>
+  <ul>
+    <li>Machine Learning - 2023 <a href="#">[PDF]</a></li>
+    <li>AI Fundamentals - 2022 <a href="#">[PDF]</a></li>
+    <li>Introduction to AI and ML - 2023 <a href="#">[PDF]</a></li>
+  </ul>
+</div>
+
+  </div>  <script>
+    function searchPapers() {
+      const input = document.getElementById('searchInput');
+      const filter = input.value.toLowerCase();
+      const branches = document.querySelectorAll('.branch');
+      branches.forEach(branch => {
+        const items = branch.querySelectorAll('li');
+        let matchFound = false;
+        items.forEach(item => {
+          const text = item.textContent.toLowerCase();
+          if (text.includes(filter)) {
+            item.style.display = '';
+            matchFound = true;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+        branch.style.display = matchFound ? '' : 'none';
+      });
+    }
+  </script></body>
+</html>
